@@ -31,10 +31,6 @@ Please return your working solution within 7 days of receiving the challenge.
 
 Initially I couldn't quite understand how to test the solution. I found that urls should be those described in the problem, like http://example.com/primes and so on. After a few minutes I realized that http: // localhost: 8090/primes, for example, would return the values as quoted in the task. So I realized that in the same localhost, but on port 8080, I should upload my service.
 
-# Solution process
-
-First I attend to study the language, since I had never coding in it. So when I received the assignment on thursday morning (in Brazil), I tried to research and study everything I could about it, starting with the history, philosophy, purpose and the syntax. Then I went deeper into language structures (types, functions, operators, and control structures). Finally after this first impact, I studied how to build a web service in go and compared with the example of the server sent.
-
 **Development assumptions**
 
 Before even starting to code, i had already decided that i would make a simplistic approach as possible, using the resources provided by the language itself and build the code clean without losing, however, the focus of the performance, since the task required a maximum response time of 500ms.
@@ -62,4 +58,4 @@ After implementing the data manipulation functions, I begin to implement the gen
 
 *Ending the handler*
 
-After all the accessory functions were done, I focused on the handler again. Until then, it had not implemented any solution that gave performance to the service, which resulted in exceeding the maximum time required almost 100% of the time. So, I researched how to implement concurrency in go in order for the maximum time not to be exceeded. It was necessary that the processing of the URLs be done in parallel. That's when I discovered the wonders of goroutine and channel, which make concurrency processing extremely easy and effective. Thus, I opened a channel for the traffic of the sets of numbers when retrieving then and closing it at the end of the merge. Thus, the performance of the service reached the satisfactory level and I was finally able to implement the automated tests as I had already learned in the language study phase.
+After all the accessory functions were done, I focused on the handler again. Until then, it had not implemented any solution that gave performance to the service, which resulted in exceeding the maximum time required almost 100% of the time. So, It was necessary that the processing of the URLs be done in parallel. That's when I add the goroutine and channel, which make concurrency processing extremely easy and effective. Thus, I opened a channel for the traffic of the sets of numbers when retrieving then and closing it at the end of the merge. After that, the performance of the service reached the satisfactory level and I was finally able to implement the automated tests.
