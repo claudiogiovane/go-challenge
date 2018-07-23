@@ -1,4 +1,4 @@
-# Solution report Go challenge from Travel Audience
+# Solution report Go challenge
 
 
 # Task
@@ -22,8 +22,6 @@ Solve the task described above using Go. Only use what's provided in the Go stan
 Document your source code, both using comments and in a separate text file that describes the intentions and rationale behind your solution. Also write down any ambiguities that you see in the task description, and describe you how you interpreted them and why. If applicable, write automated tests for your code.
 
 For testing purposes, you will be provided with an example server that, when run, listens on port 8090 and provides the endpoints /primes, /fibo, /odd and /rand.
-
-Please return your working solution within 7 days of receiving the challenge.
 
 <br>
 
